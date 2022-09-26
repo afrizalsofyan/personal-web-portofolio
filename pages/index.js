@@ -4,6 +4,7 @@ import Image from 'next/image'
 import Link from 'next/link'
 import React from 'react'
 import { logo_style, nav_style } from '../styles/constant';
+import ImgProfile from '../public/assets/images/my-img.png';
 
 const boxVariant = {
   visible: { opacity: 1, scale: 1 },
@@ -40,18 +41,18 @@ export default function Home() {
       <Head>
         <title>Afrizal Sofyan A</title>
       </Head>
-      <header className='min-h-screen w-full relative bg-gradient-to-br to-cyan-300 from-blue-600'>
+      <header className='min-h-screen w-full relative bg-gradient-to-br from-cyan-700 to-cyan-300'>
       <motion.div
         variants={boxVariant}
         initial="hidden"
         animate="visible"
         className="box"
       >
-        <nav className='h-28 w-full backdrop-blur-lg shadow-inner fixed z-10' style={nav_style(bgTransparent, paddingNav, boxShaddowNav, colorText)}>
+        <nav className='h-28 w-full backdrop-blur-lg shadow-inner fixed z-10 border-b' style={nav_style(bgTransparent, paddingNav, boxShaddowNav, colorText)}>
           <div className='grid grid-cols-3 content-center h-full'>
             <div className='flex justify-center'>
               <div className='px-2' style={logo_style(colorText)}>
-                <span className='text-4xl font-bold'>ASA</span>
+                <span className='text-4xl font-bold'>aSa</span>
               </div>
             </div>
             <div className='col-span-2 h-full'>
@@ -67,19 +68,27 @@ export default function Home() {
             </div>
           </div>
         </nav>
-        <main className='w-full mt-28 absolute h-full z-0'>
-          <div className='grid grid-cols-2'>
-            <div className='text-left py-10 font-bold text-4xl leading-relaxed pl-14'>
-              <span className='text-white'>Welcome To<br/>My Personal Website</span>
+        <main className='w-full mt-28 absolute h-[513px] z-0 top-0'>
+          <div className='grid grid-cols-2 h-full'>
+            <div className='flex flex-col pl-14 pt-24'>
+              <span className='text-left font-bold text-4xl leading-relaxed text-white'>Welcome To<br/>My Personal Website</span>
+              <span className='text-gray-100 font-bold text-xl pt-10'><span className='animate-pulse'>{'>'}</span><span>Afrizal Sofyan Afaandi</span></span>
+              <span className='text-gray-100 font-light text-base'><span className='animate-pulse'>{'>'}</span><span>Fullstack Developer</span></span>
             </div>
-            <div className='w-full py-10 px-5 bg-green-400'>a</div>
+            <div className='grid content-end'>
+              <div className='w-full px-5 h-full'>
+                <Image src={ImgProfile} alt='my-image' objectPosition={'top'} objectFit='cover' width={400} height={300} layout='responsive' loading='lazy' />
+              </div>
+              {/* <div className='img-wrapper pr-5 rounded-full border border-white bg-white'>
+              </div> */}
+            </div>
           </div>          
         </main>
         </motion.div>
       </header>
-      <section className='min-h-screen bg-red-700'>
+      {/* <section className='min-h-screen bg-red-700'>
 
-      </section>
+      </section> */}
     </>
   )
 }
