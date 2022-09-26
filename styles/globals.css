@@ -1,4 +1,28 @@
-html,
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&display=swap');
+body{
+  font-family: 'Poppins', sans-serif;
+}
+
+.logo-style{
+  font-family: 'Dancing Script', cursive;
+}
+
+.bg-banner{
+  background-image: url(../public/assets/images/bg-banner.png);
+  background-size: cover;
+}
+
+@media screen and (max-width: 1200px) {
+  .bg-banner{
+    background-size: contain;
+    background-repeat: no-repeat;
+  } 
+}
+/* html,
 body {
   padding: 0;
   margin: 0;
@@ -23,4 +47,4 @@ a {
     color: white;
     background: black;
   }
-}
+} */
