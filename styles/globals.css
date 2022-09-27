@@ -11,10 +11,10 @@ body{
   font-family: 'Dancing Script', cursive;
 }
 
-/* .bg-banner{
+.bg-banner{
   background-image: url(../public/assets/images/bg-banner.png);
   background-size: cover;
-} */
+}
 
 .img-wrapper{
   width: 300px;
