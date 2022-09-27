@@ -1,57 +1,49 @@
 {
-    "experience": {
-        "experience_1": {
+    "experience": [
+        {
             "company": "Freelance",
             "city": "Lampung",
             "national": "Indonesia",
             "role": "Fullstack Developer",
             "start_at": "Februari 2021",
             "end_at": "November 2021",
-            "job_desc_1": "Melakukan design ui dan slicing design menggunakan Flutter ke dalam bentuk mobile apps.",
-            "job_desc_2": "Membuat otentikasi menggunakan Laravel.",
-            "job_desc_3": "Membuat admin panel dan backend menggunakan Laravel."
+            "job_desc":[ "Melakukan design ui dan slicing design menggunakan Flutter ke dalam bentuk mobile apps.", "Membuat otentikasi menggunakan Laravel.", "Membuat admin panel dan backend menggunakan Laravel."]
         },
-        "experience_2": {
+        {
             "company": "PT. Javasigna Intermedia",
             "city": "Yogyakarta",
             "national": "Indonesia",
             "role": "Front-end Engineer Internship",
             "start_at": "Juni 2018",
             "end_at": "Agustus 2018",
-            "job_desc_1": "Melakukan slicing desain ke dalam bentuk website company profile dengan HTML, CSS dan Javascript.",
-            "job_desc_2": "Melakukan maintenance website Universitas menggunakan Wordpress.",
-            "job_desc_3": "Membuat desain ui untuk aplikasi mobile e-wallet."
+            "job_desc": ["Melakukan slicing desain ke dalam bentuk website company profile dengan HTML, CSS dan Javascript.", "Melakukan maintenance website Universitas menggunakan Wordpress.", "Membuat desain ui untuk aplikasi mobile e-wallet."]
         }
-    },
-    "education_1": {
-        "company": "Fazztrack",
-        "city": "Lampung",
-        "national": "Indonesia",
-        "role": "Fullstack Web Developer",
-        "start_at": "Juni 2022",
-        "end_at": "September 2022",
-        "job_desc_1": "Mempelajari javascript dengan framework React js, Next js, Node js, Express js, React Native",
-        "job_desc_2": "Mengerjakan tugas mingguan base on project.",
-        "job_desc_3": "Melakukan checkout, push github setiap pukul 5.",
-        "job_desc_4": "Membuat project dengan tim dan individu."
-    },
-    "education_2": {
-        "company": "Institut Teknologi Sumatera",
-        "city": "Lampung",
-        "national": "Indonesia",
-        "role": "S1 Teknik Informatika",
-        "start_at": "Juni 2015",
-        "end_at": "Februari 2020",
-        "job_desc_1": "Mempelajari javascript dengan framework React js, Next js, Node js, Express js, React Native",
-        "job_desc_2": "Mengerjakan tugas mingguan base on project.",
-        "job_desc_3": "Melakukan checkout, push github setiap pukul 5.",
-        "job_desc_4": "Membuat project dengan tim dan individu."
-    },
+    ],
+    "education": [
+        {
+            "company": "Fazztrack",
+            "city": "Lampung",
+            "national": "Indonesia",
+            "role": "Fullstack Web Developer",
+            "start_at": "Juni 2022",
+            "end_at": "September 2022",
+            "job_desc": ["Mempelajari javascript dengan framework React js, Next js, Node js, Express js, React Native", "Mengerjakan tugas mingguan base on project.", "Melakukan checkout, push github setiap pukul 5.", "Membuat project dengan tim dan individu."]
+        },
+        {
+            "company": "Institut Teknologi Sumatera",
+            "city": "Lampung",
+            "national": "Indonesia",
+            "role": "S1 Teknik Informatika",
+            "start_at": "Juni 2015",
+            "end_at": "Februari 2020",
+            "job_desc": ["Mempelajari javascript dengan framework React js, Next js, Node js, Express js, React Native", "Mengerjakan tugas mingguan base on project.", "Melakukan checkout, push github setiap pukul 5.", "Membuat project dengan tim dan individu."]
+        }
+    ],
     "contact": {
         "location": "Lampung",
         "phone": "-",
         "email": "afrizalafaandi@gmail.com",
-        "github": "https://github.com/afrizalsofyan",
-        "linkedin": "https://www.linkedin.com/in/afrizalsofyan"
+        "github": "github.com/afrizalsofyan",
+        "linkedin": "linkedin.com/in/afrizalsofyan"
     }
 }

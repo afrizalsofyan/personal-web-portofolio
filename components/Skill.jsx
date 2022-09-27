@@ -3,15 +3,12 @@ import React from 'react'
 const Skill = () => {
   return (
     <>
-        <div className='py-20 px-10'>
+        <div className='py-20 px-10 text-cyan-800'>
             <div className='flex justify-center'>
-                <span className='text-5xl border-b-2 border-cyan-600 font-medium pb-4 text-cyan-600'>Skill</span>
+                <span className='text-5xl border-b-2 border-cyan-800  font-medium pb-4'>Skill</span>
             </div>
-            <div className='grid grid-cols-7'>
-                <div className=''>
-                    <span className='text-lg font-bold'>Skills :</span>
-                </div>
-                <div className='col-span-6 flex gap-10'>
+            <div className='flex justify-center pt-20 leading-10'>
+                <div className='flex gap-28'>
                     <ul className='list-disc'>
                         <li className='text-base font-extralight'>React Js</li>
                         <li className='text-base font-extralight'>Next Js</li>

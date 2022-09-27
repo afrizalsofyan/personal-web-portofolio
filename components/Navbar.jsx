@@ -3,9 +3,8 @@ import Link from 'next/link'
 import { logo_style, nav_style } from '../styles/constant';
 
 const NavbarMenu = () => {
-    const menuList = ['Home', 'About', 'Portofolio', 'Blog', 'Contact'];
-    const menuLinkTo = ['/', '/about', '#', '#', '#'];
-
+    const menuList = ['Home', 'About', 'Contact', 'Portofolio'];
+    const menuLinkTo = ['/', '/about', '/contact', '#'];
       
     const [heightWindow, setHeightWindow] = React.useState('');
     const [bgTransparent, setBgTransparent] = React.useState(0);
