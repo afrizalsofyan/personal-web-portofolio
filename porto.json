@@ -1,0 +1,98 @@
+[
+    {
+        "images": ["https://res.cloudinary.com/asadev619/image/upload/v1663334688/react-home_phmera.png", "https://res.cloudinary.com/asadev619/image/upload/v1663334689/react-home2_y5sihc.png", "https://res.cloudinary.com/asadev619/image/upload/v1663334688/react-home3_rcjhry.png"],
+        "title": "OurPocket - React Js",
+        "details": "OurPocket Web is a website-based application for transferring money, saving money, and other transactions. This app is built with react js.",
+        "tech": {
+            "front-end": ["react js", "bootstrap", "axios", "react redux", "react bootstrap", "HTML", "CSS"],
+            "backend": ["node js", "express js", "JWT", "multer"],
+            "database": "postgreSQL",
+            "tools": ["cloudinary", "github", "supabase", "vercel"]
+        },
+        "publication": "https://web-ourpocket.vercel.app",
+        "repository": {
+            "front-end": "https://github.com/afrizalsofyan/fw9-react-ourpocket",
+            "back-end": "https://github.com/afrizalsofyan/fw9-backend"
+        }
+    },
+    {
+        "images": ["https://res.cloudinary.com/asadev619/image/upload/v1663849417/next-landing_gswceb.png", "https://res.cloudinary.com/asadev619/image/upload/v1663849417/next-dashboard_hay6jf.png", "https://res.cloudinary.com/asadev619/image/upload/v1663849416/next_profile_rafekh.png"],
+        "title": "OurPocket - Next Js",
+        "details": "OurPocket Web is a website-based application for transferring money, saving money, and other transactions. This app is built with next js.",
+        "tech": {
+            "front-end": ["next js", "bootstrap", "axios", "react redux", "react bootstrap", "HTML", "CSS"],
+            "backend": [],
+            "database": "postgreSQL",
+            "tools": ["cloudinary", "github", "supabase", "vercel"]
+        },
+        "publication": "https://ourpocket-next.vercel.app",
+        "repository": {
+            "front-end": "https://github.com/afrizalsofyan/fw9-next-ourpocket",
+            "back-end": ""
+        }
+    },
+    {
+        "images": ["https://res.cloudinary.com/asadev619/image/upload/v1663340648/Screenshot_2022-09-15-21-15-21-920_com.ourpocket_fjmpgc.jpg", "https://res.cloudinary.com/asadev619/image/upload/v1663340648/Screenshot_2022-09-15-21-15-45-360_com.ourpocket_lzskuk.jpg", "https://res.cloudinary.com/asadev619/image/upload/v1663340648/Screenshot_2022-09-15-21-17-18-077_com.ourpocket_fl7cjc.jpg"],
+        "title": "OurPocket - React Native",
+        "details": "OurPocket Mobile Apps is a website-based application for transferring money, saving money, and other transactions. This app is built with react native.",
+        "tech": {
+            "front-end": ["react native", "axios", "react redux"],
+            "backend": ["node js", "express js", "JWT", "multer"],
+            "database": "postgreSQL",
+            "tools": ["cloudinary", "github", "supabase", "vercel"]
+        },
+        "publication": "https://github.com/afrizalsofyan/ourpocket-react_native/releases/tag/OurPocketV1",
+        "repository": {
+            "front-end": "https://github.com/afrizalsofyan/ourpocket-react_native",
+            "back-end": "https://github.com/afrizalsofyan/fw9-backend"
+        }
+    },
+    {
+        "images": ["https://res.cloudinary.com/asadev619/image/upload/v1664542067/screencapture-ifenisha-store-vercel-app-product-products-2022-09-26-12_10_44_hcwyag.png", "https://res.cloudinary.com/asadev619/image/upload/v1664542067/screencapture-ifenisha-store-vercel-app-cart-2022-09-26-12_09_34_zist6d.png", "https://res.cloudinary.com/asadev619/image/upload/v1664542066/screencapture-ifenisha-store-vercel-app-profile-my-product-all-2022-09-26-12_11_28_vvmw1q.png"],
+        "title": "Ifenisha Store - Next Js",
+        "details": "Ifenisha Store is an e-commerce application that is used to sell buy furniture or furniture. This application is built using Next js.",
+        "tech": {
+            "front-end": ["next js", "axios", "react redux", "tailwind"],
+            "backend": ["node js", "express js", "JWT", "multer", "prisma js"],
+            "database": "postgreSQL",
+            "tools": ["cloudinary", "github", "supabase", "vercel"]
+        },
+        "publication": "https://ifenisha-store.vercel.app",
+        "repository": {
+            "front-end": "https://github.com/afrizalsofyan/ifenisha-store",
+            "back-end": "https://github.com/afrizalsofyan/fw9-parabot-backend"
+        }
+    },
+    {
+        "images": ["https://res.cloudinary.com/asadev619/image/upload/v1664534014/df5c6d2f-35c9-40f6-8bbb-6e4578c5a6d6_ycgazx.png"],
+        "title": "Ifenisha Store - Backend",
+        "details": "Ifenisha Store is an e-commerce application that is used to sell buy furniture or furniture. This backend application is built using node js / express js.",
+        "tech": {
+            "front-end": [],
+            "backend": ["node js", "express js", "JWT", "multer", "prisma js"],
+            "database": "postgreSQL",
+            "tools": ["cloudinary", "github", "supabase", "vercel"]
+        },
+        "publication": "https://fw9-parabot-backend-mkkn.vercel.app",
+        "repository": {
+            "front-end": "",
+            "back-end": "https://github.com/afrizalsofyan/fw9-parabot-backend"
+        }
+    },
+    {
+        "images": ["https://res.cloudinary.com/asadev619/image/upload/v1664534014/df5c6d2f-35c9-40f6-8bbb-6e4578c5a6d6_ycgazx.png"],
+        "title": "OurPocket - Backend",
+        "details": "OurPocket is a website-based application for transferring money, saving money, and other transactions. This backend application is built using node js / express js.",
+        "tech": {
+            "front-end": [],
+            "backend": ["node js", "express js", "JWT", "multer", "prisma js"],
+            "database": "postgreSQL",
+            "tools": ["cloudinary", "github", "supabase", "vercel"]
+        },
+        "publication": "https://fw9-backend.vercel.app/",
+        "repository": {
+            "front-end": "",
+            "back-end": "https://github.com/afrizalsofyan/fw9-backend"
+        }
+    }
+]

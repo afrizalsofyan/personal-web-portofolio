@@ -23,6 +23,15 @@ body{
   overflow: hidden;
 }
 
+.img-porto-wrapper{
+  width: 400px !important;
+  height: 200px !important;
+  overflow: hidden;
+}
+
+.modal-custom::-webkit-scrollbar{
+  display: none;
+}
 @media screen and (max-width: 1200px) {
   .bg-banner{
     background-size: contain;

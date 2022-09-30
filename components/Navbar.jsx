@@ -4,7 +4,7 @@ import { logo_style, nav_style } from '../styles/constant';
 
 const NavbarMenu = () => {
     const menuList = ['Home', 'About', 'Contact', 'Portofolio'];
-    const menuLinkTo = ['/', '/about', '/contact', '#'];
+    const menuLinkTo = ['/', '/about', '/contact', '/portofolio'];
       
     const [heightWindow, setHeightWindow] = React.useState('');
     const [bgTransparent, setBgTransparent] = React.useState(0);
