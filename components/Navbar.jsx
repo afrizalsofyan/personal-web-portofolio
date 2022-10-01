@@ -1,6 +1,7 @@
 import React from 'react';
 import Link from 'next/link'
 import { logo_style, nav_style } from '../styles/constant';
+import {FiMenu} from 'react-icons/fi'
 
 const NavbarMenu = () => {
     const menuList = ['Home', 'About', 'Contact', 'Portofolio'];
@@ -11,6 +12,8 @@ const NavbarMenu = () => {
     const [colorText, setColorText] = React.useState(0);
     const [paddingNav, setPaddingNav] = React.useState(30);
     const [boxShaddowNav, setBoxShaddowNav] = React.useState(0);
+
+    const [collapseMenu, setCollapseMenu] = React.useState(false);
 
     const handleScrollWindow = () => {
         setHeightWindow(window.scrollY)
@@ -40,7 +43,7 @@ const NavbarMenu = () => {
                             </div>
                         </div>
                         <div className='col-span-2 h-full'>
-                            <div className='grid grid-cols-3 h-full'>
+                            <div className='hidden md:grid grid-cols-3 h-full'>
                                 <div className='col-start-2 col-end-5 flex justify-evenly items-center font-semibold'>
                                     {menuList.map((e, i) => {
                                         return(
@@ -53,9 +56,29 @@ const NavbarMenu = () => {
                                     })}
                                 </div>
                             </div>
+                            <div className='flex md:hidden justify-end mr-10 cursor-pointer' onClick={()=>setCollapseMenu(!collapseMenu)}>
+                                <FiMenu size={32}/>
+                            </div>
                         </div>
                     </div>
-                </nav>                
+                    <div className={`w-full p-5 text-cyan-600 ${collapseMenu ? 'transition ease-in-out delay-200' : 'transition ease-in-out delay-200 -translate-y-96'}`}>
+                        <div className='flex flex-col justify-center items-center gap-6 bg-white p-5 shadow-md'>
+                            {menuList.map((e, i) => {
+                                return(
+                                    <Link href={menuLinkTo[i]} key={'key '+i}>
+                                        <a className='hover:text-cyan-400 font-medium text-center'>
+                                            {e}
+                                        </a>
+                                    </Link>
+                                )
+                            })}
+                        </div>
+                    </div>
+                    {/* {collapseMenu ? (
+                        <>
+                        </>
+                    ) : null} */}
+                </nav>   
             </header>
         </>
     );

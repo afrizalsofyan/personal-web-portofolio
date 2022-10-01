@@ -12,13 +12,13 @@ function ModalDetails({showModal, onHide, title, images, desc, fetech, betech, d
                 <div className='absolute z-10 w-full min-h-full backdrop-blur-sm top-0 flex  justify-center bg-black/75' onClick={onHide}>
                 </div> 
                 <div className='absolute z-20 w-full col-span-3 flex flex-col justify-center items-center top-0 py-5 text-cyan-800'>
-                    <div className='w-2/3 bg-white flex flex-col gap-10 modal-custom overflow-auto h-[850px] shadow-md shadow-gray-600 px-10'>
-                        <div className='grid grid-cols-4 mt-9'>
+                    <div className='w-2/3 bg-white flex flex-col gap-10 modal-custom overflow-auto h-[850px] shadow-md shadow-gray-600 px-5 md:px-10'>
+                        <div className='flex justify-between gap-1 md:gap-0 md:grid grid-cols-4 mt-9'>
                             <div className='col-span-3 flex justify-end items-center'>
-                                <span className='text-center text-4xl'>{title}</span>
+                                <span className='text-center md:text-4xl md:font-semibold'>{title}</span>
                             </div>
                             <button className='flex justify-end items-center' onClick={onHide}>
-                                <FiX size={32}/>
+                                <FiX size={32} className='p-2 md:p-0'/>
                             </button>
                         </div>
                         <div className='flex justify-center items-center'>
@@ -34,15 +34,15 @@ function ModalDetails({showModal, onHide, title, images, desc, fetech, betech, d
                             })}
                         </div>
                         <div className='flex flex-col'>
-                            <span className='font-semibold text-lg'>Description</span>
+                            <span className='font-semibold md:text-lg'>Description</span>
                             <p className='mt-5'>{desc}</p>
                         </div>
-                        <div className='flex gap-10'>
-                            <span className='font-semibold text-lg'>Tech</span>
+                        <div className='flex flex-col md:flex-row gap-10'>
+                            <span className='font-semibold md:text-lg'>Tech</span>
                             <div className='flex flex-col gap-5'>
-                                <div className='mt-1'>
-                                    <span className='font-semibold'>front-end</span>
-                                    <ol className='list-disc ml-10 grid grid-cols-4 gap-x-10 gap-y-3 mt-3'>
+                                <div className='md:mt-1'>
+                                    <span className='font-semibold'>Front-end</span>
+                                    <ol className='flex flex-col list-disc ml-10 md:grid grid-cols-4 gap-x-10 gap-y-3 mt-3'>
                                         {fetech?.map((e, i) => {
                                             return(
                                                 <>
@@ -53,8 +53,8 @@ function ModalDetails({showModal, onHide, title, images, desc, fetech, betech, d
                                     </ol>
                                 </div>
                                 <div>
-                                    <span className='font-semibold'>backend-end</span>
-                                    <ol className='list-disc ml-10 grid grid-cols-4 gap-x-10 gap-y-3 mt-3'>
+                                    <span className='font-semibold'>Backend-end</span>
+                                    <ol className='flex flex-col list-disc ml-10 md:grid grid-cols-4 gap-x-10 gap-y-3 mt-3'>
                                         {betech?.map((e, i) => {
                                             return(
                                                 <>
@@ -65,8 +65,8 @@ function ModalDetails({showModal, onHide, title, images, desc, fetech, betech, d
                                     </ol>
                                 </div>
                                 <div>
-                                    <span className='font-semibold'>tools</span>
-                                    <ol className='list-disc ml-10 grid grid-cols-4 gap-x-10 gap-y-3 mt-3'>
+                                    <span className='font-semibold'>Tools</span>
+                                    <ol className='flex flex-col list-disc ml-10 md:grid grid-cols-4 gap-x-10 gap-y-3 mt-3'>
                                         {tooltech?.map((e, i) => {
                                             return(
                                                 <>
@@ -77,24 +77,24 @@ function ModalDetails({showModal, onHide, title, images, desc, fetech, betech, d
                                     </ol>
                                 </div>
                                 <div className='flex gap-5'>
-                                    <span className='font-semibold'>database</span>
+                                    <span className='font-semibold'>Database</span>
                                     <span>{dbtech}</span>
                                 </div>
                             </div>
                         </div>
-                        <div className='flex gap-5'>
-                            <span className='font-semibold text-lg'>Publish : </span>
+                        <div className='flex flex-col md:flex-row gap-5'>
+                            <span className='font-semibold md:text-lg'>Publish : </span>
                             <a href={`${publishLink}`} target={'_blank'} rel='noreferrer'>{publishLink}</a>
                         </div>
-                        <div className='flex gap-5 pb-10'>
-                            <span className='font-semibold text-lg'>Repository</span>
+                        <div className='flex flex-col md:flex-row gap-5 pb-10'>
+                            <span className='font-semibold md:text-lg'>Repository</span>
                             <div>
-                                <div className='flex gap-5'>
+                                <div className='flex flex-col md:flex-row gap-5'>
                                     <span className='font-medium'>front-end : </span>
                                     <a href={`${repositoryLink['front-end']}`} target={'_blank'} rel='noreferrer'>{repositoryLink['front-end']}</a>
                                 </div>
-                                <div className='flex gap-5'>
-                                    <span className='font-medium'>backend-end : </span>
+                                <div className='flex flex-col md:flex-row gap-5 mt-5 md:mt-0'>
+                                    <span className='md:font-medium'>backend-end : </span>
                                     <a href={`${repositoryLink['back-end']}`} target={'_blank'} rel='noreferrer'>{repositoryLink['back-end']}</a>
                                 </div>
                             </div>

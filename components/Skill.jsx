@@ -8,7 +8,7 @@ const Skill = () => {
                 <span className='text-5xl border-b-2 border-cyan-800  font-medium pb-4'>Skill</span>
             </div>
             <div className='flex justify-center pt-20 leading-10'>
-                <div className='flex gap-28'>
+                <div className='flex flex-col md:flex-row gap-1 md:gap-28'>
                     <ul className='list-disc'>
                         <li className='text-base font-extralight'>React Js</li>
                         <li className='text-base font-extralight'>Next Js</li>

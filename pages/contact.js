@@ -14,8 +14,9 @@ function Contact() {
     <Layout child={
       <div className='bg-[#42C2FF] w-full min-h-screen flex items-end z-0'>
         <Image src={SvgBg} alt='bg-content' />
-        <div className='absolute flex w-full h-full justify-center items-center'>
-            <div className='bg-white w-[500px] h-[300px] rounded-3xl border-2 border-cyan-600 shadow-lg'>
+        <div className='absolute flex flex-col w-full h-full justify-center items-center gap-10'>
+            <span className='text-3xl font-semibold text-gray-100'>Connect with me</span>
+            <div className='bg-white md:w-[500px] h-[300px] rounded-3xl border-2 border-cyan-600 shadow-lg'>
               <div className='flex flex-col justify-center items-start h-full gap-5 p-10 text-cyan-800 font-medium'>
                 {typeContact.map((e, i) => {
                   return(

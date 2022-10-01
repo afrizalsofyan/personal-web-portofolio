@@ -9,7 +9,7 @@ function Portofolio() {
   return (
     <Layout child={
         <div className='grid grid-row-2 bg-[#42C2FF] w-full min-h-screen py-28'>
-          <div className='grid grid-cols-3 place-content-center gap-y-10 text-cyan-800'>
+          <div className='flex flex-col mt-10 md:mt-0 md:grid grid-cols-3 place-content-center gap-y-10 text-cyan-800'>
             {dataPorto.map((e, i) => {
               return(
                 <>

@@ -22,16 +22,16 @@ const HomeComponenet = () => {
                     className="box"
                 >
                     <NavbarMenu/>    
-                    <main className='w-full min-h-screen grid content-end'>
-                        <div className='grid grid-cols-2'>
-                            <div className='flex flex-col pl-14'>
-                                <span className='text-left font-bold text-4xl leading-relaxed text-white'>Welcome To<br/>My Personal Website</span>
-                                <span className='text-[#EFFFFD] font-bold text-xl pt-10 flex gap-3 items-center mb-3'><span className='animate-pulse'><MdArrowForwardIos/></span><span>Afrizal Sofyan Afaandi</span></span>
+                    <main className='w-full min-h-screen flex justify-center items-center md:grid content-end'>
+                        <div className='flex flex-col-reverse md:grid grid-cols-2 gap-5 md:gap-0 '>
+                            <div className='flex flex-col md:pl-14'>
+                                <span className='text-center md:text-left font-bold text-3xl md:text-4xl leading-relaxed text-white'>Welcome To<br/>My Personal Website</span>
+                                <span className='text-[#EFFFFD] font-bold md:text-xl pt-10 flex gap-3 items-center mb-3'><span className='animate-pulse'><MdArrowForwardIos/></span><span>Afrizal Sofyan Afaandi</span></span>
                                 <span className='text-[#EFFFFD] font-light text-base'><span>Fullstack Developer</span></span>
                             </div>
                             <div className='flex px-5'>
-                                <div className='w-full '>
-                                    <Image src={ImgProfile} alt='my-image' objectPosition={'top'} objectFit='cover' width={400} height={300} layout='responsive' loading='lazy' />
+                                <div className='w-full'>
+                                    <Image src={ImgProfile} alt='my-image' objectPosition={'top'} objectFit='cover' width={400} height={300} layout='responsive' loading='lazy'/>
                                 </div>
                             </div>
                         </div> 
