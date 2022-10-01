@@ -21,10 +21,12 @@ function Contact() {
                   return(
                     <div className='grid grid-cols-12' key={'key contact '+i}>
                       <div className='flex items-center'>
-                        {iconContact[i]}
+                        <div key={'icon key'+i}>
+                          {iconContact[i]}
+                        </div>
                       </div>
                       <span className='col-start-2 col-end-3'>{e}</span>
-                      <a href={`${valueContact[i].includes('gmail') ? `https://mail.google.com/mail/?view=cm&fs=1&to=${valueContact[i]}` : `https://${valueContact[i]}` }`} className='col-start-5 col-end-13' target="_blank" rel='noreferrer'>{valueContact[i]}</a>
+                      <a key={'value key'+i} href={`${valueContact[i].includes('gmail') ? `https://mail.google.com/mail/?view=cm&fs=1&to=${valueContact[i]}` : `https://${valueContact[i]}` }`} className='col-start-5 col-end-13' target="_blank" rel='noreferrer'>{valueContact[i]}</a>
                     </div>
                   )
                 })}
