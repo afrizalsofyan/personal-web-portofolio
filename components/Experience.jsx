@@ -22,10 +22,10 @@ const Experience = () => {
                             </div>
                             <div className='text-sm ml-10 mt-3'>
                                 <ol className='list-disc leading-7'>
-                                    {e.job_desc.map( e => {
+                                    {e.job_desc.map((e, i) => {
                                         return(
                                             <>
-                                                <li>{e}</li>
+                                                <li key={'key job'+i}>{e}</li>
                                             </>
                                         )
                                     })}

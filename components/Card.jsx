@@ -9,7 +9,7 @@ function Card({src, title, images, desc, fetech, betech, dbtech, tooltech, publi
         <div className='flex justify-center' onClick={()=>setShow(true)}>
             <figure className='flex flex-col bg-white p-10 gap-5 rounded-lg shadow-lg'>
                 <div className='shadow-xl' >
-                    <Image src={src} objectFit={'cover'} width={200} height={200}/>
+                    <Image src={src} objectFit={'cover'} width={200} height={200} alt='img-card'/>
                 </div>
                 <div className='w-[200px]'>
                     <p className='font-semibold truncate'>{title}</p>

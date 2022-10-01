@@ -4,7 +4,7 @@ import { FiX } from 'react-icons/fi'
 
 function ModalDetails({showModal, onHide, title, images, desc, fetech, betech, dbtech, tooltech, publishLink, repositoryLink}) {
   const [imgPreview, setImgPreview] = React.useState(images[0]);
-  console.log(images)
+//   console.log(images)
   return (
     <>
         {showModal ? 
@@ -22,13 +22,13 @@ function ModalDetails({showModal, onHide, title, images, desc, fetech, betech, d
                             </button>
                         </div>
                         <div className='flex justify-center items-center'>
-                            <Image src={imgPreview} width={600} height={400} objectFit='contain' />
+                            <Image src={imgPreview} width={600} height={400} objectFit='contain' alt='img-preview' />
                         </div>
                         <div className='flex justify-center gap-5'>
                             {images?.map((e, i) => {
                                 return(
                                     <button onClick={()=>setImgPreview(e)} className='shadow-sm'>
-                                        <Image key={'key '+i} src={e} width={250} height={250} objectFit='cover' />
+                                        <Image key={'key '+i} src={e} width={250} height={250} objectFit='cover' alt={'img-element'+i} />
                                     </button>
                                 )
                             })}
@@ -84,18 +84,18 @@ function ModalDetails({showModal, onHide, title, images, desc, fetech, betech, d
                         </div>
                         <div className='flex gap-5'>
                             <span className='font-semibold text-lg'>Publish : </span>
-                            <a href={`${publishLink}`} target={'_blank'}>{publishLink}</a>
+                            <a href={`${publishLink}`} target={'_blank'} rel='noreferrer'>{publishLink}</a>
                         </div>
                         <div className='flex gap-5 pb-10'>
                             <span className='font-semibold text-lg'>Repository</span>
                             <div>
                                 <div className='flex gap-5'>
                                     <span className='font-medium'>front-end : </span>
-                                    <a href={`${repositoryLink['front-end']}`} target={'_blank'}>{repositoryLink['front-end']}</a>
+                                    <a href={`${repositoryLink['front-end']}`} target={'_blank'} rel='noreferrer'>{repositoryLink['front-end']}</a>
                                 </div>
                                 <div className='flex gap-5'>
                                     <span className='font-medium'>backend-end : </span>
-                                    <a href={`${repositoryLink['back-end']}`} target={'_blank'}>{repositoryLink['back-end']}</a>
+                                    <a href={`${repositoryLink['back-end']}`} target={'_blank'} rel='noreferrer'>{repositoryLink['back-end']}</a>
                                 </div>
                             </div>
                         </div>
