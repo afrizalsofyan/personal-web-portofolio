@@ -4,7 +4,10 @@ const nextConfig = {
   swcMinify: true,
   images:{
     domains: ['res.cloudinary.com']
-  }
+  },
+  eslint: {
+    ignoreDuringBuilds: true,
+  },
 }
 
 module.exports = nextConfig
